@@ -1,0 +1,114 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+nav a {
+  color: #d81313;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.seccion {
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  background-color: #0bf75a;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+.contenedor-peliculas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.pelicula {
+  position: relative;
+}
+
+.pelicula-poster {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.pelicula-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fffb00;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.pelicula:hover .pelicula-info {
+  opacity: 1;
+}
+
+.pelicula-info p {
+  margin-bottom: 5px;
+  font-size: 0.9em;
+}
+
+#lista-peliculas{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 30px;
+  padding: 1%;
+
+}
+
+ .pelicula{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(255, 255, 255);
+  padding: 10px;
+}
+
+.pelicula img{
+  max-width: 100%;
+  height: auto;
+}
+
+
+
